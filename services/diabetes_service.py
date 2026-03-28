@@ -12,14 +12,14 @@ def diabetes_prediction(data):
     xin = np.array([
         data.pregnancies,
         data.glucose,
-        data.bloodpressure,
-        data.skinthickess,
+        data.bloodPressure,
+        data.skinThickness,
         data.insulin,
         data.bmi,
         data.diabetespedigreefunction,
         data.age
     ]).reshape(1,8)
-    prediction = RF_model2.prediction(xin)
+    prediction = RF_model2.predict(xin)
     print("xin shape", xin.shape)
     return labels[prediction[0]]
 

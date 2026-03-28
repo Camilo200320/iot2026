@@ -10,11 +10,11 @@ class patientDiabetesData(BaseModel):
         last_name: str
         pregnancies: int
         glucose: int
-        bloodpresure: int
-        skinthickness: int
+        bloodPressure: int
+        skinThickness: int
         insulin: int
         bmi: float 
-        diabetepedigreefunction: float
+        diabetespedigreefunction: float
         age: int
 
 class PatientDiabetesOutput(BaseModel):
